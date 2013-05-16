@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Neuer Blogpost</title>
+		<link type="text/css" rel="stylesheet" href="/css/styles.css"   />
+	</head>
+	<body>
+		<ul class="navigation">
+			<li class="nav_element"><a href="/">Home</a></li>
+			<li class="nav_element"><a href="/newpost">newPost</a></li>
+		</ul>
+		<h1 class="topic">Verfasse einen neuen Blogeintrag</h1>
+		<a href="/">Back</a>
+		
+		<form method="post">
+			<label>
+				<div class="label">Subject:</div>
+				<input type="text" name="blog_title" value="{{blog_title}}">
+			</label>
+			<label>
+				<div class="label">Inhalt:</div>
+				<textarea class="new_blogpost" name="blog_post" value="{{blog_content}}"></textarea>
+			</label>
+			<div><input type="submit"></div>
+			<div class="error">{{ error }}</div>
+		</form>
+		
+	</body>
+</html>

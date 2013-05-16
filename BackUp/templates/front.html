@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Anja's Blog</title>
+		<link type="text/css" rel="stylesheet" href="/css/styles.css"   />
+	</head>
+	<body>
+		<ul class="navigation">
+			<li class="nav_element"><a href="/">Home</a></li>
+			<li class="nav_element"><a href="/newpost">newPost</a></li>
+		</ul>
+		<h1 class="title">Anja's Blog</h1>
+		<a href="/newpost">Neuer Post</a>
+		
+		<div>
+			<div class="entry_title">THEMA</div>
+			<hr class="seperator">
+			<div class="entry_content"></div>
+			{% for post in posts %}
+			<div>Published: {{ post.date_published }}</div>
+			<div>Title: {{ post.blog_title }}</div>
+			<div>Post: {{ post.blog_post }}</div>
+			<hr>
+			{% endfor %}
+		</div>
+	</body>
+</html>

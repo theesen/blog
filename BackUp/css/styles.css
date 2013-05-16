@@ -1,0 +1,22 @@
+.title {
+	padding-top: 10px;
+	padding-left: 100px
+	
+}
+.seperator {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.navigation {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background: grey;
+}
+.nav_element {
+	display: inline;
+}
+h1 {
+	font-size: 40px;
+}
